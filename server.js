@@ -14,7 +14,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.send("Hello-world");
+  res.send("Hello-world-Docker-Sample-Api");
 });
 
 app.post("/message", async (req, res) => {
