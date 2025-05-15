@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const { messageSchema } = require("./models/schema.js");
 const app = express();
 require("dotenv").config();
-require('mongoose');
+//require('mongoose');
 
 app.use(morgan("dev"));
 app.use(
@@ -27,7 +27,7 @@ app.post("/message", async (req, res) => {
 
 const fun = async () => {
   try {
-    // await mongoose.connect(process.env.MONGO_URL);
+    await mongoose.connect(process.env.MONGO_URL);
     app.listen(process.env.PORT, () => {
       console.log(`Server is started at ${process.env.PORT}`);
     });
