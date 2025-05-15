@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const { messageSchema } = require("./models/schema.js");
 const app = express();
 require("dotenv").config();
+require('mongoose');
 
 app.use(morgan("dev"));
 app.use(
