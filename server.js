@@ -27,7 +27,7 @@ app.post("/message", async (req, res) => {
 
 const fun = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URL);
+    // await mongoose.connect(process.env.MONGO_URL);
     app.listen(process.env.PORT, () => {
       console.log(`Server is started at ${process.env.PORT}`);
     });
